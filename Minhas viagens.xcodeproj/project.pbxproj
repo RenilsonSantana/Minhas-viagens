@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2EBE1E26601349003E3784 /* ArmazenamentoViagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EBE1D26601349003E3784 /* ArmazenamentoViagens.swift */; };
+		6B2EBE202660138B003E3784 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EBE1F2660138B003E3784 /* Viagem.swift */; };
 		6B53836F265EC3A700BECEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B53836E265EC3A700BECEEC /* AppDelegate.swift */; };
 		6B538371265EC3A700BECEEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B538370265EC3A700BECEEC /* SceneDelegate.swift */; };
-		6B538373265EC3A700BECEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B538372265EC3A700BECEEC /* ViewController.swift */; };
+		6B538373265EC3A700BECEEC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B538372265EC3A700BECEEC /* TableViewController.swift */; };
 		6B538376265EC3A700BECEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B538374265EC3A700BECEEC /* Main.storyboard */; };
 		6B538378265EC3AB00BECEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B538377265EC3AB00BECEEC /* Assets.xcassets */; };
 		6B53837B265EC3AB00BECEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B538379265EC3AB00BECEEC /* LaunchScreen.storyboard */; };
+		6B538385265EDD9600BECEEC /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B538384265EDD9600BECEEC /* MapaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B2EBE1D26601349003E3784 /* ArmazenamentoViagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmazenamentoViagens.swift; sourceTree = "<group>"; };
+		6B2EBE1F2660138B003E3784 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		6B53836B265EC3A700BECEEC /* Minhas viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minhas viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B53836E265EC3A700BECEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B538370265EC3A700BECEEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B538372265EC3A700BECEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B538372265EC3A700BECEEC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6B538375265EC3A700BECEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B538377265EC3AB00BECEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B53837A265EC3AB00BECEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B53837C265EC3AB00BECEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B538384265EDD9600BECEEC /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B404CD52661706400DD2152 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B2EBE1D26601349003E3784 /* ArmazenamentoViagens.swift */,
+				6B2EBE1F2660138B003E3784 /* Viagem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B404CD62661707600DD2152 /* Mapa */ = {
+			isa = PBXGroup;
+			children = (
+				6B404CD82661709000DD2152 /* View */,
+				6B404CD72661707E00DD2152 /* Controller */,
+			);
+			path = Mapa;
+			sourceTree = "<group>";
+		};
+		6B404CD72661707E00DD2152 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B538384265EDD9600BECEEC /* MapaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6B404CD82661709000DD2152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B404CD9266170AC00DD2152 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6B404CDA266170B400DD2152 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6B404CDA266170B400DD2152 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B538372265EC3A700BECEEC /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6B538362265EC3A700BECEEC = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +111,11 @@
 		6B53836D265EC3A700BECEEC /* Minhas viagens */ = {
 			isa = PBXGroup;
 			children = (
+				6B404CD9266170AC00DD2152 /* Home */,
+				6B404CD62661707600DD2152 /* Mapa */,
+				6B404CD52661706400DD2152 /* Models */,
 				6B53836E265EC3A700BECEEC /* AppDelegate.swift */,
 				6B538370265EC3A700BECEEC /* SceneDelegate.swift */,
-				6B538372265EC3A700BECEEC /* ViewController.swift */,
 				6B538374265EC3A700BECEEC /* Main.storyboard */,
 				6B538377265EC3AB00BECEEC /* Assets.xcassets */,
 				6B538379265EC3AB00BECEEC /* LaunchScreen.storyboard */,
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B538373265EC3A700BECEEC /* ViewController.swift in Sources */,
+				6B538373265EC3A700BECEEC /* TableViewController.swift in Sources */,
+				6B538385265EDD9600BECEEC /* MapaViewController.swift in Sources */,
 				6B53836F265EC3A700BECEEC /* AppDelegate.swift in Sources */,
+				6B2EBE1E26601349003E3784 /* ArmazenamentoViagens.swift in Sources */,
+				6B2EBE202660138B003E3784 /* Viagem.swift in Sources */,
 				6B538371265EC3A700BECEEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
